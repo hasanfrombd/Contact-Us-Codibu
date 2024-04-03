@@ -1,263 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <link rel="stylesheet" href="css/contact.css">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://codibu.com/assets/images/brand/favicon.ico" />
+    <link rel="stylesheet" href="https://codibu.com/css/app.bootstrap.5.1.css">
+    <link href="https://codibu.com/assets/css/icons.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://codibu.com/assets/css/components.css" rel="stylesheet"/>
+    <link href="https://codibu.com/assets/css/buttons.css" rel="stylesheet"/>
+    <link href="https://codibu.com/assets/css/components-col.css" rel="stylesheet"/>
+    <link href="https://codibu.com/assets/css/theme-filter.css" rel="stylesheet"/>
+    <link href="https://codibu.com/assets/css/pagination.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet" >
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact Us | Codibu</title>
+  </head>
+  <body>
 
-  <title>Contact Us | Codibu</title>
-</head>
-<body>
-  <div class="">
-    <section class="top-section">
-      <div class="heading container">
-        <div class="heading1">Contact Us | Codibu</div>
-        <p>Hosting | Domain | Development | Design | Online Marketing</p>
-      </div>
-    </section>
-  
-    <section class="contact-area container d-flex flex-column flex-md-row">
-      <div class="call-us d-flex align-items-center">
-        <span class="title-icons"><i class="fa-solid fa-phone"></i></span>
-        <h2>By Phone</h2>
-        <button class="button1">Call Us</button>
-      </div>
-      <div class="text-us d-flex align-items-center">
-        <span class="title-icons"><i class="fa-solid fa-message"></i></span>
-        <h2>By Text</h2>
-        <button class="button2">Text Us</button>
-      </div>
-    </section>
-    <hr>
-  
-    <section class="container email-section">
-      <div class="wrap m-auto d-flex justify-content-around row flex-column flex-md-row">
-          <div class="title col-md-5">
-              <div class="titlewithicon">
-                <span class="title-icons"><i class="fa-solid fa-envelope-circle-check"></i></span>
-                <h2>By Email</h2>
+  <header class="header_section ">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light px-lg-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img id="navbar-brand-img" src="./images/logo_white.svg" alt="">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-              <span class="sub">| Subscribed users 24/7 -</span>
-              <a href="#">Create a ticket</a>
-          </div>
-          <div class="content col-md-7">
-              <div class="choose">
-                <label for="choose">Select question type</label>
-                <br>
-                <select name="choose" id="choose">
-                  <option value="">Choose</option>
-                  <option value="General">General</option>
-                  <option value="Sales">Sales</option>
-                  <option value="Account">Account</option>
-                  <option value="Billing">Billing</option>
-                </select>                
-              </div>
-    
-              <div class="name">
-                <label for="name">Your name</label>
-                <br>
-                <input type="text" placeholder="Type your name">
-              </div>
-    
-              <div class="email">
-                <label for="email">Your email</label>
-                <br>
-                <input type="email" placeholder="xxx@xxx.com">                
-              </div>
-    
-              <div class="phone">
-                <label for="phone">Your phone</label>
-                <br>
-                <input type="tel" placeholder="xxx-xxx-xxxx">                
-              </div>
-    
-              <div class="message">
-                <label for="message">Your message</label>
-                <br>
-                <textarea name="message" id="message" cols="40" rows="10">
-                </textarea>                
-              </div>
-              <div class="robot">
-    
-              </div>
-    
-              <div class="submit">
-                <input type="submit" value="Submit">
-              </div>
-          </div>
-      </div>
-    </section>
-    <hr>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ms-auto mb-0 ">
+                <li class="nav-item mt-1 py-1 action_btn_div_mobile" style="display:none;">
+                    <a href="https://codibu.com/templates" class="action_button top-bar-right-button ">FREE TRIAL</a>
+                </li>
+                <div class="dropdown action_btn_div_mobile" style="display:none;">
+                  <a class="btn btn-secondary dropdown-toggle languages_menu_hamburger" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                  </a>
 
-    <section class="container">
-      <div class="faq row m-auto flex-column flex-md-row">
+                  <ul class="dropdown-menu languages_menu_hamburger_dropdown" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item active" href="https://codibu.com/project">EN</a></li>
+                    <li class="me-0"><a class="dropdown-item" href="https://codibu.com/project/ko">KO</a></li>
+                  </ul>
+                </div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
+                <ul class="dropdown-menu shadow">
+                  <li><a class="dropdown-item" href="#">Hosting & Domain</a></li>
+                  <li><a class="dropdown-item" href="#">Templates</a></li>
+                  <li><a class="dropdown-item" href="#">SEO & ADS</a></li>
+                  <li><a class="dropdown-item" href="#">Development</a></li>
+                  <li><a class="dropdown-item" href="#">Free Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Free Tools</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing & Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="icon_menu">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                  <li class="nav-item dropdown" id="login_li">
+                    <a class="nav-link dropdown-toggle pe-0" aria-current="page" href="#" role="button" id="dropdown_login_link" data-bs-toggle="dropdown">
+                        <svg width="26" viewBox="0 0 26 26" aria-label="user icon"><defs><style></style></defs><circle class="path" cx="13" cy="9.7" r="4.1"></circle><path class="path" d="M19.51,18.1v2.31h-13V18.1c0-2.37,2.92-4.3,6.51-4.3S19.51,15.73,19.51,18.1Z"></path></svg>
+                    </a>
+                        <div class="dropdown-menu m-0 p-0 login_dropdown">
+                            <div class="modal position-relative d-block" id="login_modal">
+                              <div class="modal-dialog m-0">
+                                <div class="modal-content">
+                                  <div class="modal-header border-0" > 
+                                    <h5 class="modal-title  modal_login_title" >Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body login_dropdown_modal_body" >
+                                    <form role="form" action="" method="">
+
+                                        <div class="inputBox input-group">
+                                            <span  class="input-group-text" id="email_icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                          <input type="text" class="form-control" id="email" name="email" required  value="">
+                                          <label for="email">Username or email<span class="text-danger">*</span></label>
+                                        </div>
+                                        
+                                        <div class="inputBox input-group">
+                                            <span  class="input-group-text" id="pass_icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                          <input type="password" class="form-control" id="modal_login_password" name="password" required  value="">
+                                          <label for="password">Password <span class="text-danger">*</span></label>
+                                          <span  class="input-group-text" ><i class="fa fa-eye toggle-password" toggle="#modal_login_password"  aria-hidden="true"></i></span>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="remember_me_modal" >
+                                            <label class="form-check-label" for="remember_me_modal" >Remember me</label>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <button  class="submit_btn_modal">Login</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="text-mute text-center forgot_pass_txt"><a  href="">Lost your password?</a></p>
+
+                                            <h4 class="text-center create_account_txt"><a href="" class="text-center" >Create an account?</a></h4>
+                                        </div>
+                                    </form>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <div class="languages_menu horizontal">
+                        <ul>
+                            <li class="lang-active"><a href="https://codibu.com/project">EN</a></li>
+                            <li class=""><a href="https://codibu.com/project/ko/">KO</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item mt-lg-1 mt-md-1 py-1 action_btn_div">
+                    <a href="https://codibu.com/templates" class="action_button top-bar-right-button ">FREE TRIAL</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  </header>
+
+  <div>
+  <section class="top-section">
+    <div class="heading container">
+      <div class="heading1">Contact Us | Codibu</div>
+      <p>Hosting | Domain | Development | Design | Online Marketing</p>
+    </div>
+  </section>
+
+  <section class="contact-area container d-flex flex-column flex-md-row">
+    <div class="call-us d-flex align-items-center">
+      <span class="title-icons"><i class="fa-solid fa-phone"></i></span>
+      <h2>By Phone</h2>
+      <button class="button1">Call Us</button>
+    </div>
+    <div class="text-us d-flex align-items-center">
+      <span class="title-icons"><i class="fa-solid fa-message"></i></span>
+      <h2>By Text</h2>
+      <button class="button2">Text Us</button>
+    </div>
+  </section>
+  <hr>
+
+  <section class="container email-section">
+    <div class="wrap m-auto d-flex justify-content-around row flex-column flex-md-row">
         <div class="title col-md-5">
-          <div class="titlewithicon">
-            <span class="title-icons"><i class="fa-solid fa-question"></i></span>
-            <h2>FAQ</h2>
-          </div>
-        </div>  
-        <div class="questions col-md-7">
-          <div class="question">
-              Is Codibu's hosting service fast & reliable?
-              <span class="plusminus">-</span>              
-          </div>
-          <div class="answer" id="first-answer">
-            <p>
-              AWS hosting is the world`s most comprehensive and broadly
-              adopted cloud platform. Millions of customers- including the
-              fastest-growing startups, largest enterprises, and leading
-              government agencies- are using AWS to lower costs, become more
-              technologically agile, and innovate faster.
-            </p>
-          </div>
-          
+            <div class="titlewithicon">
+              <span class="title-icons"><i class="fa-solid fa-envelope-circle-check"></i></span>
+              <h2>By Email</h2>
+            </div>
+            <span class="sub">| Subscribed users 24/7 -</span>
+            <a href="#">Create a ticket</a>
+        </div>
+        <div class="content col-md-7">
+            <div class="choose">
+              <label for="choose">Select question type</label>
+              <br>
+              <select name="choose" id="choose">
+                <option value="">Choose</option>
+                <option value="General">General</option>
+                <option value="Sales">Sales</option>
+                <option value="Account">Account</option>
+                <option value="Billing">Billing</option>
+              </select>                
+            </div>
   
-          <div class="question">            
-            How do I get a refund?
+            <div class="name">
+              <label for="name">Your name</label>
+              <br>
+              <input type="text" placeholder="Type your name">
+            </div>
+  
+            <div class="email">
+              <label for="email">Your email</label>
+              <br>
+              <input type="email" placeholder="xxx@xxx.com">                
+            </div>
+  
+            <div class="phone">
+              <label for="phone">Your phone</label>
+              <br>
+              <input type="tel" placeholder="xxx-xxx-xxxx">                
+            </div>
+  
+            <div class="message">
+              <label for="message">Your message</label>
+              <br>
+              <textarea name="message" id="message" cols="40" rows="10">
+              </textarea>                
+            </div>
+            <div class="robot">
+  
+            </div>
+  
+            <div class="submit">
+              <input type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+  </section>
+  <hr>
+
+  <section class="container">
+    <div class="faq row m-auto flex-column flex-md-row">
+      <div class="title col-md-5">
+        <div class="titlewithicon">
+          <span class="title-icons"><i class="fa-solid fa-question"></i></span>
+          <h2>FAQ</h2>
+        </div>
+      </div>  
+      <div class="questions col-md-7">
+        <div class="question">
+            Is Codibu's hosting service fast & reliable?
+            <span class="plusminus">-</span>              
+        </div>
+        <div class="answer" id="first-answer">
+          <p>
+            AWS hosting is the world`s most comprehensive and broadly
+            adopted cloud platform. Millions of customers- including the
+            fastest-growing startups, largest enterprises, and leading
+            government agencies- are using AWS to lower costs, become more
+            technologically agile, and innovate faster.
+          </p>
+        </div>
+        
+
+        <div class="question">            
+          How do I get a refund?
+          <span class="plusminus">+</span>
+        </div>            
+        <div class="answer">
+          <p><strong>One-time purchase services.</strong></p>
+          <p>Simply, we 100% guarantee your satisfaction, before the project
+            starts, you can request a full refund from the contact us page.
+            we usually start the project within 24 hours. once the project
+            begins, we charge $40 USD per hour and will refund the remaining
+            balance after the working hours fee.</p>
+          <p><strong>Subscribe services.</strong></p>
+          <p>You can cancel the subscription anytime from my
+            account-subscriptions page. the cancelation will affect the next
+            billing cycle date.</p>
+          <p><strong>Domain refund</strong></p>
+          <p>Google Domains &amp; refund policy</p>
+          <p>You can cancel your domain registration and initiate a refund by contacting Google Domains Support.</p>
+
+          <p>Registration fees</p>
+          <p>Without prejudice to any statutory rights of withdrawal you may
+            have as an EEA-based consumer, as described below, domain name
+            registration fees are generally refundable within 5 days of
+            purchase, subject to the following exceptions:</p>
+
+          <p>Premium domain name registrations are non-refundable.</p>
+          <p>Domain names transferred from a different registrar are non-refundable.</p>
+          <p>Domain names ending in .pl, .de, .fr., .it, .jp, or .nl are non-refundable.</p>
+          <p>Domain names that end in .au or .com.au are only refundable within 3 days of purchase.</p>
+          <p>Domain names that end in .mx and .com.mx are only refundable
+            within 45 days of purchase.</p>
+          <p>You may not receive refunds for more than 3 domains in any
+            consecutive 12-month period.</p>
+          <p>Renewal fees</p>
+          <p>Manually renewed domain names are not eligible for refunds.
+            However, if auto-renewal is turned on for your domain name, you
+            typically have 30 days depending on the registry to request a
+            refund from the renewal date.</p>
+
+          <p>Other non-refundable fees</p>
+          <p>One-time early access fees</p>
+          <p>Restoration fees</p>
+          <p>Google Workspace fees</p>
+          <p>One-time aftermarket fees</p>
+          <p>To initiate a refund, contact Google Domains support. After your
+            refund is processed, your domain name registration is canceled.
+          </p>
+        </div>        
+
+        <div class="question">
+            Are plugins and themes free to use?
             <span class="plusminus">+</span>
-          </div>            
-          <div class="answer">
-            <p><strong>One-time purchase services.</strong></p>
-            <p>Simply, we 100% guarantee your satisfaction, before the project
-              starts, you can request a full refund from the contact us page.
-              we usually start the project within 24 hours. once the project
-              begins, we charge $40 USD per hour and will refund the remaining
-              balance after the working hours fee.</p>
-            <p><strong>Subscribe services.</strong></p>
-            <p>You can cancel the subscription anytime from my
-              account-subscriptions page. the cancelation will affect the next
-              billing cycle date.</p>
-            <p><strong>Domain refund</strong></p>
-            <p>Google Domains &amp; refund policy</p>
-            <p>You can cancel your domain registration and initiate a refund by contacting Google Domains Support.</p>
-  
-            <p>Registration fees</p>
-            <p>Without prejudice to any statutory rights of withdrawal you may
-              have as an EEA-based consumer, as described below, domain name
-              registration fees are generally refundable within 5 days of
-              purchase, subject to the following exceptions:</p>
-  
-            <p>Premium domain name registrations are non-refundable.</p>
-            <p>Domain names transferred from a different registrar are non-refundable.</p>
-            <p>Domain names ending in .pl, .de, .fr., .it, .jp, or .nl are non-refundable.</p>
-            <p>Domain names that end in .au or .com.au are only refundable within 3 days of purchase.</p>
-            <p>Domain names that end in .mx and .com.mx are only refundable
-              within 45 days of purchase.</p>
-            <p>You may not receive refunds for more than 3 domains in any
-              consecutive 12-month period.</p>
-            <p>Renewal fees</p>
-            <p>Manually renewed domain names are not eligible for refunds.
-              However, if auto-renewal is turned on for your domain name, you
-              typically have 30 days depending on the registry to request a
-              refund from the renewal date.</p>
-  
-            <p>Other non-refundable fees</p>
-            <p>One-time early access fees</p>
-            <p>Restoration fees</p>
-            <p>Google Workspace fees</p>
-            <p>One-time aftermarket fees</p>
-            <p>To initiate a refund, contact Google Domains support. After your
-              refund is processed, your domain name registration is canceled.
-            </p>
-          </div>        
-  
-          <div class="question">
-              Are plugins and themes free to use?
-              <span class="plusminus">+</span>
-          </div>
-          <div class="answer">
-            <p>Most plugins and themes are free. Some plugins and themes require
-              a purchased license key to use&nbsp;additional options.
-            </p>
-          </div>
-  
-          <div class="question">
-            Is there a limit to download free plugins and themes?
-            <span class="plusminus">+</span>  
-          </div>
-          <div class="answer">
-            <p>Yes, each hosting service plan has its own download limits&nbsp;per
-               month,&nbsp;and the limit resets on the next billing cycle date.
-            </p>
-          </div>
-  
-          <div class="question">
-            Are Images free to use on a pre-built website?
-            <span class="plusminus">+</span>                    
-          </div>
-          <div class="answer">            
-            <p>No, not all images in pre-build websites are licensed.</p>
-            <p>You can use free images or pay for premium images from 3rd party services.</p>
-          </div>
-  
-          <div class="question">
-            How much do I pay for services?           
-            <span class="plusminus">+</span>   
-          </div>
-          <div class="answer">            
-            <p>We do have many service package plans and you can read&nbsp;the
-              detail&nbsp;from the below link.</p>
-            <p>Please check Our <a href="/pricing">Pricing and Plans</a>.</p>         
-          </div>
-  
-          <div class="question">
-            Is it easy to build a website?
-            <span class="plusminus">+</span>        
-          </div>
-          <div class="answer">           
-            <p>With us, yes! WordPress offers a few different ways to create
-              your own website so you can choose a process that works best for
-              you! Need to get online fast? Just choose one of our free
-              premium website designs that will build a professional site for
-              you in under 7 minutes. If you want 100% design freedom, start
-              from scratch with a visual composer. Check Edit Tool</p>
-            <p>Also, we do services &nbsp;| Development | Design | Online
-              Advertisement | SEO (Search Engine Optimization)</p>
-            <p>Please check <a href="/pricing">Our Pricing and Plans.</a></p>                 
-          </div>
-  
-          <div class="question">
-            Can I create a website without knowing how to code?
-            <span class="plusminus">+</span>        
-          </div>
-          <div class="answer">
-            <p>Absolutely. WordPress is user-friendly and makes it possible to
-              build a professional website without knowing how to code. In the
-              Visual Composer Editor, you can drag and drop any feature you
-              want and customize it to match the look and feel of your site.</p>
-          </div>
-  
-          <div class="question">
-            How do I make my site mobile-friendly?           
-            <span class="plusminus">+</span>  
-          </div>
-          <div class="answer">
-            <p>Your WordPress website includes a mobile-optimized version that
-              looks great on smaller screens. The WordPress Easy Editor makes
-              it even easier to customize your mobile site.</p>
-          </div>
+        </div>
+        <div class="answer">
+          <p>Most plugins and themes are free. Some plugins and themes require
+            a purchased license key to use&nbsp;additional options.
+          </p>
+        </div>
+
+        <div class="question">
+          Is there a limit to download free plugins and themes?
+          <span class="plusminus">+</span>  
+        </div>
+        <div class="answer">
+          <p>Yes, each hosting service plan has its own download limits&nbsp;per
+             month,&nbsp;and the limit resets on the next billing cycle date.
+          </p>
+        </div>
+
+        <div class="question">
+          Are Images free to use on a pre-built website?
+          <span class="plusminus">+</span>                    
+        </div>
+        <div class="answer">            
+          <p>No, not all images in pre-build websites are licensed.</p>
+          <p>You can use free images or pay for premium images from 3rd party services.</p>
+        </div>
+
+        <div class="question">
+          How much do I pay for services?           
+          <span class="plusminus">+</span>   
+        </div>
+        <div class="answer">            
+          <p>We do have many service package plans and you can read&nbsp;the
+            detail&nbsp;from the below link.</p>
+          <p>Please check Our <a href="/pricing">Pricing and Plans</a>.</p>         
+        </div>
+
+        <div class="question">
+          Is it easy to build a website?
+          <span class="plusminus">+</span>        
+        </div>
+        <div class="answer">           
+          <p>With us, yes! WordPress offers a few different ways to create
+            your own website so you can choose a process that works best for
+            you! Need to get online fast? Just choose one of our free
+            premium website designs that will build a professional site for
+            you in under 7 minutes. If you want 100% design freedom, start
+            from scratch with a visual composer. Check Edit Tool</p>
+          <p>Also, we do services &nbsp;| Development | Design | Online
+            Advertisement | SEO (Search Engine Optimization)</p>
+          <p>Please check <a href="/pricing">Our Pricing and Plans.</a></p>                 
+        </div>
+
+        <div class="question">
+          Can I create a website without knowing how to code?
+          <span class="plusminus">+</span>        
+        </div>
+        <div class="answer">
+          <p>Absolutely. WordPress is user-friendly and makes it possible to
+            build a professional website without knowing how to code. In the
+            Visual Composer Editor, you can drag and drop any feature you
+            want and customize it to match the look and feel of your site.</p>
+        </div>
+
+        <div class="question">
+          How do I make my site mobile-friendly?           
+          <span class="plusminus">+</span>  
+        </div>
+        <div class="answer">
+          <p>Your WordPress website includes a mobile-optimized version that
+            looks great on smaller screens. The WordPress Easy Editor makes
+            it even easier to customize your mobile site.</p>
         </div>
       </div>
-    </section>
-    <hr>
-  
-    <section class="container">
-      <div class="address m-auto">      
-          <p><b>NJ office address </b>– 61 W Palisade Ave, 2B, Englewood, New Jersey, 07631 (* by appointment only)</p>
-          <p><b>Office hours</b> (Est) NY Times:
-            <br><b>Mon ~ Fri</b> – 9:30 am to 5:00 pm
-            <br><b>Sat ~ Sun</b> – Closed</p>      
-      </div>
-    </section>  
-  
+    </div>
+  </section>
+  <hr>
+
+  <section class="container">
+    <div class="address m-auto">      
+        <p><b>NJ office address </b>– 61 W Palisade Ave, 2B, Englewood, New Jersey, 07631 (* by appointment only)</p>
+        <p><b>Office hours</b> (Est) NY Times:
+          <br><b>Mon ~ Fri</b> – 9:30 am to 5:00 pm
+          <br><b>Sat ~ Sun</b> – Closed</p>      
+    </div>
+  </section>
   </div>
-  
-  <!-- bootstrap 5.1 cdn -->
+
+  <footer>
+    <div class="footer">
+        <div class="container-fluid px-0">     
+            <div class="footer_wrapper">
+                <div class="row">                       
+                    <div class="col-xl-6 col-sm-12 footer_description_div">
+                        <img class="footer_img" src="./images/logo_white.svg" alt="">
+                        <p class="about_des">Let the experts build your website.</p>
+                        <p class="about_des">Landing page, an E-commerce, an online learning academy,<br>or an interactive information site for your business.</p>
+                        <p class="about_des">
+                            2700+ Themes & Plugins | Free SEO analysis & tools <br>Coding Free - drag & drop website builder | AWS Hosting & Domain Development service | SEO & Online Marketing
+                        </p>
+                    </div><!--- END COL --> 
+                    <div class="col-xl-6 col-sm-12 menu_div">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-12">
+                                <h5>MENU </h5>
+                                <ul>
+                                    <li><a href="https://codibu.com/project/about-us/">About Us</a></li>
+                                    <li><a href="https://codibu.com/#services">Services</a></li>
+                                    <li><a href="https://codibu.com/project/hosting-domain/">Hosting &amp; Domain</a></li>
+                                    <li><a href="/#template">Templates</a></li>
+                                    <li><a href="https://codibu.com/project/website-development-service/">Development</a></li>
+                                    <li><a href="https://codibu.com/project/seo-ads-service/">SEO &amp; ADS</a></li>
+                                    <li><a href="https://codibu.com/analysis">Free Analysis</a></li>
+                                    <li><a href="https://codibu.com/tools">Free Tools</a></li>
+                                    <li><a href="https://codibu.com/project/pricing-plans/">Pricing &amp; Plan</a></li>
+                                    <li><a href="https://codibu.com/project/help/">Help &amp; Center</a></li>
+                                    <li><a href="https://codibu.com/project/contact">Contact Us</a></li>
+                                </ul>       
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <h5>Terms & Conditions</h5>
+                                <ul>
+                                    <li><a href="https://codibu.com/Acceptable-Use-Policy">Acceptable Use Policy</a></li>
+                                    <li><a href="https://codibu.com/Anti-Spam-Policy">Anti Spam Policy</a></li>
+                                    <li><a href="https://codibu.com/Copyright-Claims-Policy">Copyright Claims Policy</a></li>
+                                    <li><a href="https://codibu.com/Data-Request-Policy">Data Request Policy</a></li>
+                                    <li><a href="https://codibu.com/Domain-Name-Dispute-Policy">Domain Name Dispute Policy</a> </li>
+                                    <li><a href="https://codibu.com/Domain-Registration-Agreement">Domain Registration Agreement</a> </li>
+                                    <li><a href="https://codibu.com/Ownership-Changes-Disputes">Ownership Changes Disputes</a></li>
+                                    <li><a href="https://codibu.com/Professional-Services-Agreement">Professional Services Agreement</a></li>
+                                    <li><a href="https://codibu.com/User-Generated-Content-Terms-Conditions">User Generated Content Terms Conditions</a></li>
+                                    <li><a href="https://codibu.com/Privacy-Policy">Privacy Policy</a></li>
+                                    <li><a href="https://codibu.com/User-Agreement">User Agreement</a></li>
+                                </ul>       
+                            </div> 
+                            <div class="col-xl-2 col-md-12">
+                                <h5>DASHBOARD</h5>
+                                <ul>
+                                    <li><a href="https://codibu.com/sites">Sites</a></li>
+                                    <li><a href="https://codibu.com/domains">Domains</a></li>
+                                    <li><a href="https://codibu.com/professional-services">Services</a></li>
+                                    <li><a href="https://codibu.com/my_tickets">Tickets</a></li>
+                                    <li><a href="https://codibu.com/directory/themes/list">Themes</a></li>
+                                    <li><a href="https://codibu.com/directory/plugins/list">Plugins</a></li>
+                                    <li><a href="https://codibu.com/project/project-manager">P-Manager</a></li>
+                                    <li><a href="https://codibu.com/profile">Edit Profile</a></li>
+                                    <li><a href="https://codibu.com/stripe-card">Payment</a></li>
+                                    <li><a href="https://codibu.com/billing">Billing &amp; History</a></li>
+                                </ul>   
+                            </div>  
+                        </div>
+                    </div><!--- END COL -->      
+                </div><!--- END ROW -->     
+            </div>  
+           
+               
+            <div class="col-12 text-center m-auto copyright_div">
+                <p class="copyright">Copyright © Since 2003 <a href="">Codibu</a> All Rights Reserved.</p>
+            </div><!--- END COL -->               
+
+        </div><!--- END CONTAINER -->
+    </div>
+  </footer>
+
+
+  <!-- bootstrap 5.1.3 cdn -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
   <!-- jQuery file addedd -->
@@ -266,5 +477,6 @@
   <!-- contact.js file added -->
   <script src="js/contact.js"></script>
 
-</body>
+  <script src="./js/custom.js"></script>
+  </body>
 </html>
